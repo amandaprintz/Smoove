@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+}
+
+@media screen and (min-width: 370px) {
+  .hamburgerParent {
+    position: relative;
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 5px;
+    display: flex;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (min-width: 870px) {
+}
