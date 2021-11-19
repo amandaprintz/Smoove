@@ -27,4 +27,15 @@ body {
 }
 
 @media screen and (min-width: 870px) {
+  .grid-container {
+    background-color: #2e3114;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-box {
+    background-color: lightgrey;
+  }
 }
