@@ -8,13 +8,16 @@ body {
   width: 100%;
 }
 
+.hamburgerParent {
+  position: relative;
+}
+
 .hero img {
   width: 100%;
 }
 
 .grid-container {
-  background-color: #2e3114;
-  height: 400px;
+  height: 200px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -24,18 +27,12 @@ body {
   background-color: lightgrey;
 }
 
-@media screen and (min-width: 370px) {
-  .hamburgerParent {
-    position: relative;
-  }
-
-  .hamburger {
-    width: 35px;
-    height: 5px;
-    display: flex;
-    background-color: black;
-    margin: 6px 0;
-  }
+.hamburger {
+  width: 35px;
+  height: 5px;
+  display: flex;
+  background-color: black;
+  margin: 6px 0;
 }
 
 @media screen and (min-width: 870px) {
