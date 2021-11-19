@@ -4,16 +4,34 @@
   box-sizing: border-box;
 }
 
+.navigation {
+  position: relative;
+  background-color: lightpink;
+  height: 100px;
+}
+
 body {
   width: 100%;
 }
 
 .hamburgerParent {
-  position: relative;
+  position: absolute;
+}
+
+.hero-container img {
+  width: 100vw;
+  height: 446px;
+  object-fit: fill;
 }
 
 .hero img {
-  width: 100%;
+  object-fit: fill;
+}
+
+.below-hero {
+  background-color: lightpink;
+  width: 100vw;
+  height: 156px;
 }
 
 .grid-container {
@@ -25,6 +43,12 @@ body {
 
 .grid-box {
   background-color: lightgrey;
+}
+
+.gas-station {
+  background-color: lightpink;
+  width: 100vw;
+  height: 594px;
 }
 
 .hamburger {
