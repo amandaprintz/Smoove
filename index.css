@@ -107,6 +107,7 @@ section {
 }
 
 .upper-box {
+  display: none;
   background-color: blanchedalmond;
   position: absolute;
   width: 100vw;
