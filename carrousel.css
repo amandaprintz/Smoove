@@ -17,9 +17,6 @@
   padding: 30px;
 }
 
-.product-meta {
-  position: absolute;
-  bottom: 35px;
-  left: 26px;
-  font-family: Nunito, sans-serif;
+.grid-box {
+  background-color: lightgrey;
 }

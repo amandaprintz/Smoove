@@ -41,14 +41,42 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-box {
-  background-color: lightgrey;
+section {
+  width: 100vw;
+  height: 1250px;
 }
 
-.gas-station {
+.gasstation {
+  background-color: palevioletred;
+  width: 100vw;
+  height: 594px;
+}
+
+.foodstore {
   background-color: lightpink;
   width: 100vw;
   height: 594px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 173, 220);
+  width: 100vw;
+  height: 687px;
+}
+
+.container-content {
+  background-color: rgb(206, 123, 137);
+  width: 345px;
+  height: 295px;
+}
+
+.dark-box {
+  background-color: powderblue;
+  width: 100vw;
+  height: 610px;
 }
 
 .hamburger {
