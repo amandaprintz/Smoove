@@ -79,6 +79,40 @@ section {
   height: 610px;
 }
 
+.banner {
+  background-color: pink;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100vw;
+  height: 176px;
+}
+
+.long-box {
+  background-color: plum;
+  width: 100vw;
+  height: 800px;
+}
+
+.box-item {
+  background-color: rgb(186, 186, 228);
+  height: 120px;
+  border-radius: 10%;
+  padding-top: 25%;
+  margin-left: 21%;
+  margin-right: 21%;
+}
+
+.boxparent {
+  position: relative;
+}
+
+.upper-box {
+  background-color: blanchedalmond;
+  position: absolute;
+  width: 100vw;
+  height: 176px;
+}
+
 .hamburger {
   width: 35px;
   height: 5px;
