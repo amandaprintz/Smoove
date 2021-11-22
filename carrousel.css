@@ -1,4 +1,4 @@
-.products {
+.carrousel-container {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
@@ -15,8 +15,25 @@
   height: 440px;
   display: block;
   padding: 30px;
+  width: 100vw;
 }
 
 .grid-box {
   background-color: lightgrey;
+}
+
+@media screen and (min-width: 750px) {
+  .carrousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: black;
+  }
+
+  .product img {
+    height: 620px;
+    width: 440px;
+  }
 }

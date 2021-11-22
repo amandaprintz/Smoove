@@ -6,26 +6,39 @@
 
 .navigation {
   position: relative;
-  background-color: lightpink;
+  background-color: black;
   height: 100px;
-}
-
-body {
-  width: 100%;
 }
 
 .hamburgerParent {
   position: absolute;
+  padding-left: 10px;
+  padding-top: 10px;
+  transform: translateX(calc(100vw - 65px));
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  display: flex;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 100px;
+}
+
+body {
+  width: 100%;
+  background-color: black;
 }
 
 .hero-container img {
   width: 100vw;
-  height: 446px;
+  height: 500px;
   object-fit: fill;
 }
 
 .hero img {
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .below-hero {
@@ -114,13 +127,16 @@ section {
   height: 176px;
 }
 
-.hamburger {
-  width: 35px;
-  height: 5px;
-  display: flex;
-  background-color: black;
-  margin: 6px 0;
-}
+@media screen and (min-width: 750px) {
+  .hamburgerParent {
+    display: none;
+  }
 
-@media screen and (min-width: 870px) {
+  .below-hero {
+    display: none;
+  }
+
+  .products {
+    display: none;
+  }
 }
