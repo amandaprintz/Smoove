@@ -63,7 +63,7 @@ body {
   margin-top: 0;
 }
 
-button {
+.signUp {
   font-family: "Akira";
   color: white;
   font-size: 24px;
@@ -83,7 +83,7 @@ button {
   display: grid;
   background-color: black;
   padding-left: 80px;
-  padding-top: 60px;
+  padding-bottom: 50px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -91,6 +91,7 @@ button {
 .trioBoxText {
   padding-top: 150px;
   color: white;
+  text-align: center;
   width: 400px;
 }
 
@@ -99,6 +100,21 @@ button {
   padding-top: 60px;
   width: 360px;
   height: 470px;
+}
+
+.moreInfo {
+  font-family: "Akira";
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  width: 260px;
+  height: 65px;
+  background-color: black;
+  border-color: rgb(126, 23, 23);
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 25px;
+  position: relative;
 }
 
 @media screen and (min-width: 750px) {
@@ -122,7 +138,7 @@ button {
     width: 100vw;
   }
 
-  button {
+  .signUp {
     font-family: "Akira";
     color: white;
     font-size: 14px;
@@ -155,5 +171,18 @@ button {
     position: relative;
     width: 260px;
     height: 370px;
+  }
+
+  .moreInfo {
+    font-family: "Akira";
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    border-color: rgb(126, 23, 23);
+    position: relative;
   }
 }
