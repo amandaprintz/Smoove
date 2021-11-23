@@ -4,11 +4,43 @@
   box-sizing: border-box;
 }
 
-.navigation {
-  position: relative;
+body {
+  width: 100%;
   background-color: black;
-  height: 100px;
+  margin: 0;
 }
+
+/* TOP NAVIGATION (DESKTOP) */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  font-family: "Akira";
+  background-color: grey;
+  border-radius: 100px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+/* HAMBURGER MENU (MOBILE) */
 
 .hamburgerParent {
   position: absolute;
@@ -26,105 +58,47 @@
   border-radius: 100px;
 }
 
-body {
-  width: 100%;
-  background-color: black;
-}
-
-.hero-container img {
-  width: 100vw;
-  height: 500px;
-  object-fit: fill;
-}
-
 .hero img {
-  object-fit: cover;
-}
-
-.below-hero {
-  background-color: lightpink;
   width: 100vw;
-  height: 156px;
+  margin-top: 0;
 }
 
-.grid-container {
-  height: 200px;
+button {
+  font-family: "Akira";
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  width: 260px;
+  height: 65px;
+  background-color: rgb(126, 23, 23);
+  border: rgb(126, 23, 23);
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topTrio {
+  height: 400px;
   display: grid;
+  background-color: black;
+  padding-left: 80px;
+  padding-top: 60px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-section {
-  width: 100vw;
-  height: 1250px;
+.trioBoxText {
+  padding-top: 150px;
+  color: white;
+  width: 400px;
 }
 
-.gasstation {
-  background-color: palevioletred;
-  width: 100vw;
-  height: 594px;
-}
-
-.foodstore {
-  background-color: lightpink;
-  width: 100vw;
-  height: 594px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(196, 173, 220);
-  width: 100vw;
-  height: 687px;
-}
-
-.container-content {
-  background-color: rgb(206, 123, 137);
-  width: 345px;
-  height: 295px;
-}
-
-.dark-box {
-  background-color: powderblue;
-  width: 100vw;
-  height: 610px;
-}
-
-.banner {
-  background-color: pink;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 100vw;
-  height: 176px;
-}
-
-.long-box {
-  background-color: plum;
-  width: 100vw;
-  height: 800px;
-}
-
-.box-item {
-  background-color: rgb(186, 186, 228);
-  height: 120px;
-  border-radius: 10%;
-  padding-top: 25%;
-  margin-left: 21%;
-  margin-right: 21%;
-}
-
-.boxparent {
-  position: relative;
-}
-
-.upper-box {
-  display: none;
-  background-color: blanchedalmond;
-  position: absolute;
-  width: 100vw;
-  height: 176px;
+.japaneseIcon img {
+  margin-left: 40px;
+  padding-top: 60px;
+  width: 360px;
+  height: 470px;
 }
 
 @media screen and (min-width: 750px) {
@@ -132,11 +106,45 @@ section {
     display: none;
   }
 
-  .below-hero {
+  .hero img {
+    width: 100vw;
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation {
     display: none;
   }
 
-  .products {
-    display: none;
+  .hero img {
+    padding-bottom: 50px;
+  }
+
+  button {
+    font-family: "Akira";
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.564);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .topTrio {
+    display: grid;
+    background-color: black;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .japaneseIcon img {
+    position: relative;
+    width: 260px;
+    height: 370px;
   }
 }
