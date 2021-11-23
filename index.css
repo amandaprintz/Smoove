@@ -119,6 +119,7 @@ button {
 
   .hero img {
     padding-bottom: 50px;
+    width: 100vw;
   }
 
   button {
@@ -137,9 +138,17 @@ button {
 
   .topTrio {
     display: grid;
+    padding: 0;
+    margin-top: 100px;
     background-color: black;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .trioBoxText {
+    padding: 10px;
+    color: white;
+    width: 100vw;
   }
 
   .japaneseIcon img {
