@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 1.2;
+}
+
 /* TOP NAVIGATION (DESKTOP) */
 .topnav {
   overflow: hidden;
@@ -80,12 +84,17 @@ body {
 
 .topTrio {
   height: 400px;
+  width: 100vw;
   display: grid;
   background-color: black;
   padding-left: 80px;
   padding-bottom: 50px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trioBox {
+  width: 100%;
 }
 
 .trioBoxText {
@@ -117,6 +126,32 @@ body {
   position: relative;
 }
 
+.stationDesktop {
+  padding-top: 150px;
+  height: 700px;
+  position: relative;
+}
+
+.stationParagraph {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.255);
+  margin: 30px;
+  padding: 100px;
+  width: 500px;
+  top: 65%;
+  left: 21%;
+  transform: translate(-60%, -50%);
+}
+
+.storeDesktop {
+  padding-top: 150px;
+  height: 700px;
+  position: relative;
+}
+
+/*  ----- MEDIA QUERIES STARTS HERE */
+
 @media screen and (min-width: 750px) {
   .hamburgerParent {
     display: none;
@@ -125,6 +160,10 @@ body {
   .hero img {
     width: 100vw;
     height: 900px;
+  }
+
+  .stationMobile {
+    display: none;
   }
 }
 
@@ -184,5 +223,25 @@ body {
     background-color: black;
     border-color: rgb(126, 23, 23);
     position: relative;
+  }
+
+  .stationDesktop {
+    display: none;
+  }
+
+  .stationMobile {
+    margin-top: 800px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .stationParagraphMobile {
+    color: white;
+    /*     margin-top: -70px; */
+    background-color: rgba(0, 0, 0, 0.434);
+
+    padding: 20px;
   }
 }
