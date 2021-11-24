@@ -1,3 +1,5 @@
+/* THIS CODE FOR ALL SCREEENS */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,37 +16,10 @@ p {
   line-height: 1.2;
 }
 
-/* TOP NAVIGATION (DESKTOP) */
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: right;
-  color: white;
+h2 {
   font-family: "Akira";
-  background-color: grey;
-  border-radius: 100px;
-  text-align: center;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 14px 16px;
-
-  text-decoration: none;
-  font-size: 17px;
+  font-size: 24p;
 }
-
-.topnav a:hover {
-  background-color: grey;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: grey;
-  color: white;
-}
-
-/* HAMBURGER MENU (MOBILE) */
 
 .hamburgerParent {
   position: absolute;
@@ -62,6 +37,10 @@ p {
   border-radius: 100px;
 }
 
+.navigation {
+  display: none;
+}
+
 .hero img {
   width: 100vw;
   margin-top: 0;
@@ -70,12 +49,11 @@ p {
 .signUp {
   font-family: "Akira";
   color: white;
-  font-size: 24px;
+  font-size: 14px;
   cursor: pointer;
-  width: 260px;
-  height: 65px;
-  background-color: rgb(126, 23, 23);
-  border: rgb(126, 23, 23);
+  width: 100px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.564);
   margin: 0;
   position: absolute;
   left: 50%;
@@ -83,14 +61,12 @@ p {
 }
 
 .topTrio {
-  height: 400px;
-  width: 100vw;
   display: grid;
+  padding: 0;
+  margin-top: 100px;
   background-color: black;
-  padding-left: 80px;
-  padding-bottom: 50px;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .trioBox {
@@ -98,31 +74,33 @@ p {
 }
 
 .trioBoxText {
-  padding-top: 150px;
+  padding: 25px;
   color: white;
-  text-align: center;
-  width: 400px;
+  width: 100vw;
+  text-align: left;
 }
 
 .japaneseIcon img {
-  margin-left: 40px;
-  padding-top: 60px;
-  width: 360px;
-  height: 470px;
+  margin-left: 55px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  position: relative;
+  width: 260px;
+  height: 370px;
 }
 
 .moreInfo {
   font-family: "Akira";
   color: white;
-  font-size: 24px;
+  font-size: 14px;
+  margin-top: 40px;
   cursor: pointer;
-  width: 260px;
-  height: 65px;
+  width: 100px;
+  height: 50px;
   background-color: black;
   border-color: rgb(126, 23, 23);
   border-style: solid;
   border-width: 1px;
-  margin-top: 25px;
   position: relative;
 }
 
@@ -131,65 +109,45 @@ p {
   position: relative;
 }
 
-.stationDesktop {
-  padding-top: 150px;
-  /* height: 700px; */
-  position: relative;
-}
-
-.stationParagraph {
-  position: absolute;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.255);
-  padding: 100px;
-
-  width: 600px;
-  top: 65%;
-  left: 21%;
-  transform: translate(-60%, -50%);
-}
-
-.storeDesktop {
-  padding-top: 150px;
-  height: 700px;
-  position: relative;
-}
-
-/*  ----- MEDIA QUERIES STARTS HERE */
-
-@media screen and (min-width: 750px) {
-  .hamburgerParent {
-    display: none;
+@media screen and (min-width: 480px) {
+  .topnav {
+    overflow: hidden;
   }
 
-  .hero img {
-    width: 100vw;
-    height: 900px;
+  .topnav a {
+    float: right;
+    color: white;
+    font-family: "Akira";
+    background-color: grey;
+    border-radius: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 14px 16px;
+
+    text-decoration: none;
+    font-size: 17px;
   }
 
-  .stationMobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .navigation {
-    display: none;
+  .topnav a:hover {
+    background-color: grey;
+    color: black;
   }
 
-  .hero img {
-    padding-bottom: 50px;
-    width: 100vw;
+  .topnav a.active {
+    background-color: grey;
+    color: white;
   }
 
   .signUp {
     font-family: "Akira";
     color: white;
-    font-size: 14px;
+    font-size: 24px;
     cursor: pointer;
-    width: 100px;
-    height: 50px;
-    background-color: rgba(255, 0, 0, 0.564);
+    width: 260px;
+    height: 65px;
+    background-color: rgb(126, 23, 23);
+    border: rgb(126, 23, 23);
     margin: 0;
     position: absolute;
     left: 50%;
@@ -197,56 +155,59 @@ p {
   }
 
   .topTrio {
-    display: grid;
-    padding: 0;
-    margin-top: 100px;
-    background-color: black;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .trioBoxText {
-    padding: 10px;
-    color: white;
+    height: 400px;
     width: 100vw;
-  }
-
-  .japaneseIcon img {
-    position: relative;
-    width: 260px;
-    height: 370px;
+    padding-left: 60px;
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .moreInfo {
-    font-family: "Akira";
-    color: white;
-    font-size: 14px;
-    margin-top: 40px;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    background-color: black;
-    border-color: rgb(126, 23, 23);
-    position: relative;
+    font-size: 24px;
+    width: 260px;
+    height: 65px;
+    margin-top: 25px;
   }
 
   .stationDesktop {
+    position: relative;
+  }
+  .stationParagraph {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+  }
+
+  .textWrapper {
+    padding: 250px 80px 20px 120px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburgerParent {
     display: none;
   }
 
-  .stationMobile {
-    margin-top: 800px;
-    position: absolute;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+  .trioBox {
+    width: 100%;
   }
 
-  .stationParagraphMobile {
+  .trioBoxText {
+    padding-top: 150px;
     color: white;
-    /*     margin-top: -70px; */
-    background-color: rgba(0, 0, 0, 0.434);
+    width: 400px;
+  }
 
-    padding: 20px;
+  .japaneseIcon img {
+    width: 360px;
+    height: 470px;
   }
 }
