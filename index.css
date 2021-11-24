@@ -126,9 +126,14 @@ p {
   position: relative;
 }
 
+.station {
+  display: flex;
+  position: relative;
+}
+
 .stationDesktop {
   padding-top: 150px;
-  height: 700px;
+  /* height: 700px; */
   position: relative;
 }
 
@@ -136,9 +141,9 @@ p {
   position: absolute;
   color: white;
   background-color: rgba(0, 0, 0, 0.255);
-  margin: 30px;
   padding: 100px;
-  width: 500px;
+
+  width: 600px;
   top: 65%;
   left: 21%;
   transform: translate(-60%, -50%);
