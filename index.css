@@ -52,7 +52,7 @@ h2 {
 }
 
 .hero img {
-  width: 100vw;
+  width: 100%;
   margin-top: 0;
 }
 
@@ -74,7 +74,7 @@ h2 {
 .topTrio {
   display: grid;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 220px;
   background-color: black;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -92,12 +92,11 @@ h2 {
 }
 
 .japaneseIcon img {
-  margin-left: 55px;
   margin-bottom: 30px;
   padding-top: 50px;
   position: relative;
-  width: 260px;
-  height: 370px;
+  width: 100vw;
+  height: 490px;
 }
 
 .moreInfo {
@@ -125,7 +124,28 @@ h2 {
   width: 100vw;
 }
 
-@media screen and (min-width: 480px) {
+.stationParagraph {
+  color: white;
+  padding: 30px;
+}
+
+/* @media screen and (min-width: 480px) {
+  
+HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :) 
+
+} */
+
+@media screen and (min-width: 550px) {
+  .hamburgerParent {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
   .topnav a {
     float: right;
     color: white;
@@ -151,6 +171,12 @@ h2 {
     color: white;
   }
 
+  h1 {
+    font-size: 95px;
+    text-align: center;
+    top: 35%;
+  }
+
   .signUp {
     font-family: "Akira";
     color: white;
@@ -163,56 +189,20 @@ h2 {
     margin: 0;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 800%);
   }
 
   .topTrio {
-    height: 400px;
     width: 100vw;
-    padding-left: 60px;
+    /*    padding-left: 60px; */
     margin-bottom: 150px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .moreInfo {
-    font-size: 24px;
-    width: 260px;
-    height: 65px;
-    margin-top: 25px;
-  }
-
-  .stationParagraph {
-    position: absolute;
-    color: white;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 35%;
-  }
-
-  .textWrapper {
-    padding: 250px 80px 20px 120px;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .navigation {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-  }
-
-  h1 {
-    font-size: 95px;
-    top: 35%;
-  }
-
-  .hamburgerParent {
-    display: none;
-  }
-
   .trioBox {
+    display: grid;
     width: 100%;
+    justify-content: center;
   }
 
   .trioBoxText {
@@ -224,5 +214,24 @@ h2 {
   .japaneseIcon img {
     width: 360px;
     height: 470px;
+  }
+
+  .moreInfo {
+    font-size: 24px;
+    width: 260px;
+    height: 65px;
+    transform: translate(-50%, 50%);
+  }
+
+  .stationParagraph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+  }
+
+  .textWrapper {
+    padding: 250px 80px 20px 120px;
   }
 }
