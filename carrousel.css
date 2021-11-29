@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  justify-content: space-between;
+  background-color: black;
 }
 
 .product {
@@ -12,9 +14,8 @@
 }
 
 .product img {
-  height: 440px;
   display: block;
-  padding: 30px;
+  padding: 0px;
   width: 100vw;
 }
 
@@ -22,18 +23,8 @@
   background-color: lightgrey;
 }
 
-@media screen and (min-width: 750px) {
-  .carrousel-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 60px;
-    margin-left: 60px;
-    background-color: black;
-  }
-
-  .product img {
-    height: 620px;
-    width: 440px;
+@media screen and (min-width: 550px) {
+  .merch {
+    display: none;
   }
 }

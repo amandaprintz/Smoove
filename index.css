@@ -171,6 +171,65 @@ h3 {
   width: 300px;
 }
 
+.parts img {
+  width: 100vw;
+}
+
+.smoke {
+  position: relative;
+}
+
+.smoke img {
+  width: 100vw;
+  z-index: -20;
+}
+
+.bigSmoove {
+  color: black;
+  font-size: 40px;
+  margin-left: 50px;
+  position: absolute;
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.bigSigns img {
+  position: absolute;
+  width: 200px;
+  transform: translate(0%, -30%);
+  z-index: 100;
+}
+
+.tokyo {
+  display: grid;
+  padding: 0;
+  margin-top: 70px;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  color: white;
+  justify-items: center;
+}
+
+.tokyoParagraph {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.fastCar h3 {
+  color: white;
+  font-size: 24px;
+  margin-top: 40px;
+  -webkit-text-stroke-width: 0px;
+  text-align: center;
+}
+
+.fastCar img {
+  width: 100vw;
+}
+
 /* @media screen and (min-width: 480px) {
   
 HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :) 
@@ -287,11 +346,70 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
     display: grid;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
   }
 
   .blackParagraph {
     width: 400px;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
+  }
+
+  .signsBlackBox {
+    padding-top: 50px;
+  }
+
+  .bigSmoove {
+    margin-left: 350px;
+    margin-top: -20px;
+    font-size: 160px;
+  }
+
+  .smoke img {
+    padding: 30px;
+    position: absolute;
+  }
+
+  .bigSigns img {
+    position: absolute;
+    width: 900px;
+    margin-top: 900px;
+    margin-left: 0%;
+    transform: translate(-2%, -30%);
+    z-index: 100;
+  }
+
+  .tokyo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1300px;
+  }
+
+  .tokyoParagraph {
+    color: white;
+    position: absolute;
+    text-align: left;
+    width: 400px;
+    padding: 40px;
+    margin-left: 50px;
+  }
+
+  .fastCar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fastCar h3 {
+    position: absolute;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .fastCar img {
+    padding-top: 400px;
   }
 }
