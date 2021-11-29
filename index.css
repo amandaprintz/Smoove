@@ -12,11 +12,34 @@ body {
   margin: 0;
 }
 
+.logoNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 100;
+}
+
 h1 {
+  font-family: "Akira";
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(126, 23, 23);
+  font-size: 40px;
+  position: absolute;
+  margin-top: 50px;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
   font-family: "Akira";
   color: white;
   font-size: 30px;
   position: absolute;
+  margin-top: 50px;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -26,13 +49,13 @@ p {
   line-height: 1.2;
 }
 
-h2 {
+h3 {
   font-family: "Akira";
   font-size: 24p;
 }
 
 .hamburgerParent {
-  position: absolute;
+  position: fixed;
   padding-left: 10px;
   padding-top: 10px;
   transform: translateX(calc(100vw - 65px));
@@ -52,18 +75,19 @@ h2 {
 }
 
 .hero img {
-  width: 100%;
+  width: 100vw;
   margin-top: 0;
 }
 
 .signUp {
   font-family: "Akira";
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   width: 100px;
   height: 50px;
-  background-color: rgba(255, 0, 0, 0.564);
+  background-color: black;
+  border: solid rgb(126, 23, 23);
   margin: 0;
   position: absolute;
   top: 40%;
@@ -108,9 +132,7 @@ h2 {
   width: 100px;
   height: 50px;
   background-color: black;
-  border-color: rgb(126, 23, 23);
-  border-style: solid;
-  border-width: 1px;
+  border: solid rgb(126, 23, 23);
   left: 35%;
   position: relative;
 }
@@ -127,6 +149,26 @@ h2 {
 .stationParagraph {
   color: white;
   padding: 30px;
+}
+
+.street img {
+  width: 100vw;
+}
+
+.blackBox {
+  display: grid;
+  padding: 0;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  color: white;
+  justify-items: center;
+}
+
+.blackBox img {
+  width: 300px;
 }
 
 /* @media screen and (min-width: 480px) {
@@ -150,20 +192,16 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
     float: right;
     color: white;
     font-family: "Akira";
-    background-color: grey;
-    border-radius: 100px;
     text-align: center;
     margin-top: 10px;
     margin-right: 10px;
     padding: 14px 16px;
-
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .topnav a:hover {
-    background-color: grey;
-    color: black;
+    color: rgb(126, 23, 23);
   }
 
   .topnav a.active {
@@ -172,29 +210,34 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
   }
 
   h1 {
+    font-family: "Akira";
+    -webkit-text-stroke-width: 2px;
+    font-size: 170px;
+    top: 22%;
+  }
+
+  h2 {
     font-size: 95px;
     text-align: center;
-    top: 35%;
+    top: 25%;
   }
 
   .signUp {
-    font-family: "Akira";
-    color: white;
     font-size: 24px;
-    cursor: pointer;
     width: 260px;
     height: 65px;
-    background-color: rgb(126, 23, 23);
-    border: rgb(126, 23, 23);
+    background-color: black;
+    border: solid rgb(126, 23, 23);
     margin: 0;
-    position: absolute;
-    left: 50%;
     transform: translate(-50%, 800%);
+  }
+
+  .signUp :hover {
+    background-color: rgb(126, 23, 23);
   }
 
   .topTrio {
     width: 100vw;
-    /*    padding-left: 60px; */
     margin-bottom: 150px;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -232,6 +275,23 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
   }
 
   .textWrapper {
-    padding: 250px 80px 20px 120px;
+    padding: 190px 80px 20px 120px;
+  }
+
+  .blackBox {
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .blackBox {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blackParagraph {
+    width: 400px;
+    text-align: center;
+    margin-top: 100px;
   }
 }
