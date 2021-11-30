@@ -1,8 +1,8 @@
 /* THIS CODE FOR ALL SCREEENS */
 
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@ body {
   width: 100vw;
   background-color: black;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .logoNav {
@@ -397,7 +398,7 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
   }
 
   .smoke img {
-    padding: 30px;
+    /*  padding: 30px; */
     position: absolute;
   }
 
