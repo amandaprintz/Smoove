@@ -1,8 +1,6 @@
 /* THIS CODE FOR ALL SCREEENS */
 
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -281,6 +279,17 @@ h3 {
   text-align: center;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  height: 40%;
+  margin: 2%;
+}
+
 /* @media screen and (min-width: 480px) {
   
 HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :) 
@@ -522,5 +531,9 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
     grid-area: 2 / 2;
     margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  .social img {
+    height: 70%;
   }
 }
