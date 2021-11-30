@@ -259,6 +259,28 @@ h3 {
   display: none;
 }
 
+.contact {
+  display: grid;
+  padding: 0;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  /*   justify-content: center;
+ */
+}
+
+.contactSymbol {
+  display: grid;
+  justify-self: center;
+}
+
+.contactInfo {
+  line-height: 2.3;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
 /* @media screen and (min-width: 480px) {
   
 HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :) 
@@ -476,5 +498,21 @@ HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :)
     margin: 0;
     position: absolute;
     transform: translate(-210%, 880%);
+  }
+
+  .contact {
+    margin-top: 50px;
+    display: grid;
+    padding: 0;
+    background-color: black;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contactInfo {
+    line-height: 2.3;
+    font-size: 30px;
+    color: white;
+    text-align: center;
   }
 }
