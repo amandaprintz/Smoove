@@ -32,10 +32,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.launchDate {
-  text-align: center;
-}
-
 .topTrio {
   display: grid;
   padding: 0;
@@ -175,3 +171,9 @@ body {
 .fastCar img {
   width: 100vw;
 }
+
+/* @media screen and (min-width: 480px) {
+  
+HÄR KAN VI HA EVENTUELL DESIGN FÖR PADDA OM DET HINNS MED :) 
+
+} */
