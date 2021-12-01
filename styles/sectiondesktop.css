@@ -1,0 +1,141 @@
+@media screen and (min-width: 550px) {
+  .signUp {
+    font-size: 24px;
+    width: 260px;
+    height: 65px;
+    background-color: black;
+    border: solid rgb(126, 23, 23);
+    margin: 0;
+    transform: translate(-50%, 800%);
+  }
+
+  .signUp :hover {
+    background-color: rgb(126, 23, 23);
+  }
+
+  .launchDate {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .topTrio {
+    width: 100vw;
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .trioBox {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trioBoxText {
+    padding-top: 150px;
+    color: white;
+    width: 400px;
+  }
+
+  .japaneseIcon img {
+    width: 360px;
+    height: 470px;
+  }
+
+  .moreInfo {
+    font-size: 24px;
+    width: 260px;
+    height: 65px;
+    transform: translate(-50%, 50%);
+  }
+
+  .stationParagraph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+  }
+
+  .textWrapper {
+    padding: 190px 80px 20px 120px;
+  }
+
+  .blackBox {
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .blackBox {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+  }
+
+  .blackParagraph {
+    width: 400px;
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  .signsBlackBox {
+    padding-top: 50px;
+  }
+
+  .bigSmoove {
+    margin-top: -20px;
+    margin-left: 2px;
+    font-size: 160px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .smoke img {
+    position: absolute;
+  }
+
+  .bigSigns img {
+    position: absolute;
+    width: 900px;
+    margin-top: 100px;
+    margin-left: 0%;
+    transform: translate(-2%, 200%);
+    z-index: 100;
+  }
+
+  .tokyo {
+    position: relative;
+    display: flex;
+
+    margin-top: 1300px;
+  }
+
+  .tokyoParagraph {
+    color: white;
+    position: absolute;
+    text-align: left;
+    width: 400px;
+    padding: 40px;
+    margin-left: 50px;
+    transform: translate(240%, -10%);
+  }
+
+  .fastCar {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fastCar h3 {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .fastCar img {
+    padding-top: 400px;
+  }
+}

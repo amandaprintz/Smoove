@@ -1,0 +1,71 @@
+.contact {
+  display: grid;
+  padding: 0;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.contactSymbol {
+  display: grid;
+  justify-self: center;
+}
+
+.contactInfo {
+  line-height: 2.3;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  height: 40%;
+  margin: 2%;
+}
+
+.footerSignUp {
+  font-family: "Akira";
+  font-size: 24px;
+  color: white;
+  width: 260px;
+  height: 65px;
+  background-color: black;
+  border: solid rgb(126, 23, 23);
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .contact {
+    margin-top: 50px;
+    display: grid;
+    padding: 0;
+    background-color: black;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contactInfo {
+    line-height: 2.3;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    grid-area: 2 / 2;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .social img {
+    height: 70%;
+  }
+}

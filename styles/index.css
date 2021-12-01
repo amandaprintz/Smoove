@@ -1,0 +1,173 @@
+/* THIS CODE FOR ALL SCREEENS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero img {
+  width: 100vw;
+  margin-top: 0;
+}
+
+.signUp {
+  font-family: "Akira";
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: solid rgb(126, 23, 23);
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topTrio {
+  display: grid;
+  padding: 0;
+  margin-top: 220px;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.trioBox {
+  width: 100vw;
+}
+
+.trioBoxText {
+  padding: 25px;
+  color: white;
+  width: 100vw;
+  text-align: left;
+}
+
+.japaneseIcon img {
+  margin-bottom: 30px;
+  padding-top: 50px;
+  position: relative;
+  width: 100vw;
+  height: 490px;
+}
+
+.moreInfo {
+  font-family: "Akira";
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: solid rgb(126, 23, 23);
+  left: 35%;
+  position: relative;
+}
+
+.station {
+  object-fit: cover;
+  position: relative;
+}
+
+.station img {
+  width: 100vw;
+}
+
+.stationParagraph {
+  color: white;
+  padding: 30px;
+}
+
+.street img {
+  width: 100vw;
+}
+
+.blackBox {
+  display: grid;
+  padding: 0;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  color: white;
+  justify-items: center;
+}
+
+.blackBox img {
+  width: 300px;
+}
+
+.parts img {
+  width: 100vw;
+}
+
+.smoke {
+  position: relative;
+}
+
+.smoke img {
+  width: 100vw;
+  z-index: -20;
+}
+
+.fastCar {
+  display: flex;
+  justify-content: center;
+}
+
+.bigSmoove {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.bigSigns img {
+  position: absolute;
+  width: 200px;
+  transform: translate(0%, -30%);
+  z-index: 100;
+}
+
+.tokyo {
+  display: grid;
+  padding: 0;
+  margin-top: 70px;
+  background-color: black;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  color: white;
+  justify-items: center;
+}
+
+.tokyoParagraph {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.fastCar h3 {
+  color: white;
+  font-size: 24px;
+  margin-top: 40px;
+  -webkit-text-stroke-width: 0px;
+  text-align: center;
+}
+
+.fastCar img {
+  width: 100vw;
+}

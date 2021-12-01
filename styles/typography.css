@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Akira;
+  src: url("/fonts/Akira\ Expanded\ Demo.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-family: "Akira";
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(126, 23, 23);
+  font-size: 40px;
+  position: absolute;
+  margin-top: 50px;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-family: "Akira";
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 50px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  line-height: 1.3;
+  font-family: "Oswald";
+  font-weight: 100;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  font-family: "Akira";
+  font-size: 24p;
+  color: white;
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-family: "Akira";
+    -webkit-text-stroke-width: 2px;
+    font-size: 170px;
+    top: 22%;
+  }
+
+  h2 {
+    font-size: 95px;
+    text-align: center;
+    top: 25%;
+  }
+}

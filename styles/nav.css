@@ -1,0 +1,61 @@
+.logoNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 100;
+}
+
+.hamburgerParent {
+  position: fixed;
+  padding-left: 10px;
+  padding-top: 10px;
+  transform: translateX(calc(100vw - 65px));
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  display: flex;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 100px;
+}
+.navigation {
+  width: 100vw;
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .hamburgerParent {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  .topnav a {
+    float: right;
+    color: white;
+    font-family: "Akira";
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav a:hover {
+    color: rgb(126, 23, 23);
+  }
+
+  .topnav a.active {
+    background-color: grey;
+    color: white;
+  }
+}
