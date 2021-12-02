@@ -16,6 +16,11 @@ body {
   margin-top: 0;
 }
 
+.launchDate {
+  margin-top: 100px;
+  text-align: center;
+}
+
 .signUp {
   font-family: "Akira";
   color: white;
@@ -27,7 +32,7 @@ body {
   border: solid rgb(126, 23, 23);
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -49,7 +54,7 @@ body {
   padding: 25px;
   color: white;
   width: 100vw;
-  text-align: left;
+  text-align: center;
 }
 
 .japaneseIcon img {
@@ -70,11 +75,11 @@ body {
   height: 50px;
   background-color: black;
   border: solid rgb(126, 23, 23);
-  left: 35%;
   position: relative;
 }
 
 .station {
+  margin-top: 40px;
   object-fit: cover;
   position: relative;
 }

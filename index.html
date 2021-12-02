@@ -19,7 +19,7 @@
 
 
     <div class="logoNav">
-        <img src="/logonav.svg" />
+        <img src="/components/logonav.svg" />
     </div>
     
     <nav class="navigation">
@@ -39,9 +39,16 @@
     <!--     HERO SRCSET HERE  -->
 
      <div class="hero">
-      <img src="/img/hero_large.webp" alt="a red shiny race bike" />
-
-   
+      <img src="img/hero_large.webp" srcset="
+          /img/hero_small.webp 550w, 
+          /img/hero_large.webp"
+          sizes="
+          (max-width: 550px) 550px,
+          (max-width: 1900px) 1900px"
+          src="/img/hero_large.webp"
+          alt="a red shiny race bike" />
+      
+    
 
 
 
@@ -84,8 +91,16 @@
     <!--     PETROL STATION SRCSET HERE  -->
 
   <section class="station">
-      <img src="/img/station.webp" alt="a driver standing leaning against his bike" />
-
+      <img src="img/station.webp" srcset="
+             /img/mobilestation.webp 550w, 
+             /img/station.webp"
+              sizes="
+             (max-width: 550px) 550px,
+             (max-width: 1900px) 1900px"
+           src="/img/station.webp"
+         alt="a driver standing leaning against his bike" />
+      
+    
           <div class="stationParagraph">
             <div class="textWrapper">
               <h3>The next step</h3><br />
@@ -104,9 +119,19 @@
 
    <!--  SRCSET  -->
     <section class="street">
-        <img src="/img/street.webp" alt=" the bike standing in a dark street with a neon sign in the background" />
+       <!--  <img src="/img/street.webp" alt=" the bike standing in a dark street with a neon sign in the background" /> -->
+
+       <img src="img/street.webp" srcset="
+             /img/mobilestreet.webp 550w, 
+             /img/street.webp"
+              sizes="
+             (max-width: 550px) 550px,
+             (max-width: 1900px) 1900px"
+           src="/img/street.webp"
+         alt="the bike standing in a dark street with a neon sign in the background" />
     </section>
 
+    
     <section class="blackBox">
           <div class="blackParagraph">
               <h3>Hover suspension</h3><br>
@@ -151,7 +176,16 @@
             <h3 class="bigSmoove"> ARE YOU READY <br> TOKYO?<br>11.45.12</h3>
 
          <!--  SRCSET  -->
-              <img src="/img/tokyo.jpg" alt="fast car in Tokyo" />
+              <img src="img/tokyo.webp" srcset="
+              /img/mobiletokyo.webp 550w, 
+              /img/tokyo.webp"
+               sizes="
+              (max-width: 550px) 550px,
+              (max-width: 1900px) 1900px"
+            src="/img/tokyo.webp"
+          alt="the bike racing fast through a street" />
+
+
         </div>
     </section>  
     
