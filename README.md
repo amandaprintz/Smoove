@@ -8,7 +8,7 @@ This project was created together as a co-project together with Computer Graphic
 
 The aim of this project is to combine our skills and put together a functional landing page that has a mobile-first view but also is desktop friendly.
 
-You can visit the site [here.](https://)
+You can visit the site [here.](https://https://tokyosmoove.netlify.app/)
 
 # Installation
 
@@ -35,11 +35,4 @@ php -S localhost:8000
 https://localhost:8000
 ```
 
-# Code Review
 
-# Testers
-
-Tested by the following people:
-
-1.
-2.
