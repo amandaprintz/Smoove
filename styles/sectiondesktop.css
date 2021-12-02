@@ -21,6 +21,7 @@
   .topTrio {
     width: 100vw;
     margin-bottom: 150px;
+    margin-top: 200px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
