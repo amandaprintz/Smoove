@@ -134,6 +134,7 @@ body {
 .bigSmoove {
   color: black;
   font-size: 40px;
+  line-height: 170%;
   position: absolute;
   text-align: center;
   color: transparent;

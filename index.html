@@ -156,7 +156,19 @@
     <section class="smoke">
          <!--  SRCSET  -->
              <h3 class="bigSmoove"> SMOOVE </h3>
-                  <img src="/img/smokingwheels_large.jpeg" alt="a bike with smoke" />
+                <!--   <img src="/img/smokingwheels_large.jpeg" alt="a bike with smoke" /> -->
+
+                  <img src="img/wheels.webp" srcset="
+                  /img/wheelsmobile.webp 550w, 
+                  /img/wheels.webp"
+                   sizes="
+                  (max-width: 550px) 550px,
+                  (max-width: 1900px) 1900px"
+                src="/img/wheels.webp"
+              alt="a bike with smok" />
+
+
+
 
                  <div class="bigSigns">
                  <img src="/components/smoovelarge.svg">
@@ -175,7 +187,7 @@
         <div class="fastCar">
             <h3 class="bigSmoove"> ARE YOU READY <br> TOKYO?<br>11.45.12</h3>
 
-         <!--  SRCSET  -->
+   
               <img src="img/tokyo.webp" srcset="
               /img/mobiletokyo.webp 550w, 
               /img/tokyo.webp"
