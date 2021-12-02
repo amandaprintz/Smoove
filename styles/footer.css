@@ -38,6 +38,7 @@
   background-color: black;
   border: solid rgb(126, 23, 23);
   margin: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 550px) {
