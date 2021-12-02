@@ -16,6 +16,10 @@ body {
   margin-top: 0;
 }
 
+button:hover {
+  background-color: rgb(126, 23, 23);
+}
+
 .launchDate {
   margin-top: 100px;
   text-align: center;
